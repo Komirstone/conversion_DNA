@@ -1,0 +1,1 @@
+Ceci est un fichier .txt pour tester mon programme d'encodage de fichiers en séquence ADN.
