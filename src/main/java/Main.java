@@ -11,14 +11,9 @@ public class Main {
         String phrase = conversion.decoderADNEnMessage(seqADN);
         System.out.println("\n\n");
 
-
         //Copie du fichier text.txt dans le dossier output
         String fichierEnSeqADN = conversion.encoderFichierEnADN("src/main/resources/fichiers/test.txt");
         System.out.println("\n\n");
         String fichierDecode = conversion.decoderADNEnFichier(fichierEnSeqADN, "src/main/resources/output/");
-
-
-
-
     }
 }
