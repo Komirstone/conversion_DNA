@@ -51,14 +51,15 @@ public class SequencingResults {
         //Dans seqReverse la qualité de la dernière base est mauvaise, on la supprime
         String seqReverse = "NNNNNNNNNNNNNCNNNNANNGNNNAAGCGTGCGCGTCCTCGATCCCACAGGTTCCCCGGCCTTCTCACCCGCACGTATGCAACCCCTCCCCCCTACAACCTCCCCGTCCTGCATCCGAGCCCGCTTACTCGTTATCCGGCAGGTATACCGTCCTTCCATCAACCTAGTTTCCAATCGTACTCACGCGTCCTCTCTCGCGTTCCCGATCCCGCCGGCCTGCTCACCCTCTCGTATCCTGGCATACCTTCTAGCATCCGTCCAAGCGCGCATGTATACCCGCTATCAACCGAGTGTGTAAGTAAGTGGATTTACTCCCTCACTGTCGTGTGCGTCGTCATCCCGGCAATCTGGCATTCTTGTGTACCGTCAAGCGCACCTGCACGTTCGCGCGTCCTCATACCCACATGCTGACCCGCACGTATCCTTGTCCTCCCGCTATCCAGTATACGTCCCCTCGAGCGTACCCGCGTTCTTGTCAGCCGGCTCCCTCCCCCCCGTTCCCTCTCTCCGTGACCGGCAGCAAAATGCCA";
 
-        /**Trouver la séquence complémentaire à la lecture backward*/
+        /**Trouver la séquence complémentaire à la lecture reverse*/
         seqReverse = seqReverse.substring(0, seqReverse.length() - 1);
         String seqComplementaire = sequenceComplementaire(seqReverse);
-        //System.out.println(seqComplementaire);
+        System.out.println("Sequence complementaire a la lecture en reverse: \n"+seqComplementaire);
 
         /** Ne garder que d'environ la [moitié, fin] pour les deux lectures (forward et reverse)
          * Le début de lecture contient souvent quelques erreurs
          * Étant donné qu'elles sont complémentaires cela permet de réduire les erreurs*/
+        System.out.println("\nAssemblage des deux lectures...");
         String seqPart2 = seqForward.substring(seqForward.length()/2, seqForward.length());
         String debutSeqPart2 = seqPart2.substring(0, seqPart2.length()/10);
         //Ne conserver que la partie de la séquence qui est avant le début de la partie 2
