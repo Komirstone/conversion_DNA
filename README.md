@@ -1,6 +1,6 @@
 # conversion_DNA
 Ce projet Maven, nommé conversion_DNA, permet l'encodage de texte et de fichiers en séquences d'ADN et vice-versa, en utilisant Java 18 comme environnement de développement.
-<p></p>
+
 ![](https://github.com/Komirstone/conversion_DNA/blob/main/src/main/resources/fichiers/GifTransformation.gif)
 
 ## Prérequis
