@@ -38,6 +38,6 @@ La classe **Main** contient un exemple d'utilisation de ces fonctions.
 ## Contribuer ✨
 Les contributions sont les bienvenues. Veuillez forker le dépôt, créer une branche pour vos modifications, et soumettre une pull request pour révision.
 
-### Autheur ✒️
+### Auteur ✒️
 - [@Komirstone](https://www.github.com/Komirstone)
 
